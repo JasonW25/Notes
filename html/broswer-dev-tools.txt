@@ -1,0 +1,4 @@
+
+    in console:
+        document.body.contentEditable=true
+    -this lets you edit a page and then you can save it

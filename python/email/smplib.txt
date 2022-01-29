@@ -1,0 +1,13 @@
+import smtplib
+
+my_email = <your email that is sending>
+to_email = <the address to send to>
+
+** GMAIL  **
+connection = smtplib.SMTP("smtp.gmail.com")
+** GMAIL **
+
+connection.starttls()
+connection.login(user=my_email, password="<password>")
+connection.sendmail(from_addr=my_email, to_addrs=to_email, msg="Subject:Subject line\n\nEmail body")
+connection.close()

@@ -1,0 +1,38 @@
+import tkinter as tk
+
+
+**MAKE WINDOW**
+
+window = tk.Tk()
+window.title("title")
+window.config(padx=100, pady=50, bg="background color)
+
+window.mainloop() // at the end
+
+**TK ITEMS**
+
+<photo_item> = tk.PhotoImage(file="<image location>")
+
+
+**CANVAS**
+
+canvas = tk.Canvas(width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
+
+canvas_photo_item = canvas.create_image(400,263, image=<tk photo_item>)
+
+text_item = canvas.create_text(400, 150, text="", fill="black", font=("Ariel", 20, "italic"))
+
+
+**CANVAS ITEM CHANGES**
+
+canvas.itemconfig(<item>, <arg>=<change>)
+
+**TK PLACEMENT**
+
+<item>.grid(row=<num starts 0>, column=<num starts 0>, columnspan=<num>)
+
+
+**FUNCTIONS**
+
+something = window.after(3000, func=<function>)
+window.after_cancel() //after function ends
